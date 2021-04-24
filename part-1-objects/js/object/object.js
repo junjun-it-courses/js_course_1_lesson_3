@@ -8,16 +8,19 @@ let user2 = {};             // синтаксис "литерал объекта
 // можем поместить в объект несколько свойств в виде пар
 // «ключ: значение»:
 
-
 let someUser = {   // literalSyntaxObject
     name: "John",  // под ключом "name" хранится значение "John"
-    age: 30        // под ключом "age" хранится значение 30
+    age: 30,        // под ключом "age" хранится значение 30
 }
 
-console.log(someUser.name) // Обращение
+// console.log(someUser.name) // Обращение
+//
+someUser.gender = 'female';
+// console.log(someUser)
+
 
 delete someUser.name // Удаление свойства
-console.log(someUser)
+// console.log(someUser)
 
 
 
@@ -28,18 +31,21 @@ let anotherUser = {
     lastName: 'Doe'
 }
 
+// console.log(anotherUser.user name);
 console.log(anotherUser['user name']);
 
 
 // имя свойства может являться переменной или выражением
 
 const someObjKey = 'string_' + 28;
+
 let varObjectName = {
     [someObjKey]: 'Random value',
     name: 'Pablo'
 }
 
-console.log(varObjectName[someObjKey]);
+// console.log(varObjectName);
+// console.log(varObjectName[someObjKey]);
 
 
 
@@ -56,16 +62,17 @@ let obj = {
     info
 }
 
- console.log(obj);
+// console.log(obj);
 
 
 // Объекты которые лежат в переменной const можно изменять
 
-
 const constObject = {
-    name: 'Helen'   
+    name: 'Helen'
 }
 
 constObject.name = 'vlad'
 
-console.log(constObject)
+// console.log(constObject)
+
+// constObject = {firstName: 'vlad'}

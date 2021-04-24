@@ -7,9 +7,9 @@ let sym3 = Symbol("foo");
 // к символу. Это выражение создаёт каждый раз новый символ
 
 
-console.log(sym2 === sym3)
+console.log(sym2 === sym3);
 
 // Если буде использовать синтаксис конструктора то получим ошибку
 
-let sym = new Symbol(); // TypeError
+// let sym = new Symbol(); // TypeError
 

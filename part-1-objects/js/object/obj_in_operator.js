@@ -4,3 +4,4 @@ const someRealObject = {
 }
 
 console.log('gender' in someRealObject);
+console.log('thirdName' in someRealObject);
